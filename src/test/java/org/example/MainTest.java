@@ -31,4 +31,28 @@ class MainTest {
 
     }
 
+    @Test
+    void check_ifNumber1EvenOrOdd_thenReturnMessageEvenOrOdd() {
+        //GIVEN
+        int number1 = 5;
+        String expected = "Die Zahl ist gerade.";
+        //WHEN
+        String actual = Main.isEvenOrOdd(number1);
+        //THEN
+        assertEquals(expected, actual);
+    }
+    @Test
+    void product_whenNumber1MultipliedNumber2_thenReturnProduct() {
+        //GIVEN
+        int number1 = 10;
+        int number2 = 11;
+        int expected = 110;
+        //WHEN
+        int actual = Main.product(number1, number2);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void
 }
