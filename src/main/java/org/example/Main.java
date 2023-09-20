@@ -2,10 +2,16 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        // zu Schritt 1
         System.out.println(sum(10, 10));
+        // zu Schritt 2
         System.out.println(isEvenOrOdd(5));
+        // zu Schritt 3
         System.out.println(product(10, 11));
-        System.out.println(toUpperCase("auTo"));
+        // zu Schritt 4
+        System.out.println(toUpperCase("auto"));
+        // zu Schritt 5
+        System.out.println(checkPositiveNumber(2));
     }
     //Schritt 1
     //Schreibe einen Test für eine Methode, die die Summe von zwei ganzen Zahlen berechnet.
@@ -40,4 +46,11 @@ public class Main {
     }
     // Schritt 5
     //Schreibe einen Test für eine Methode, die prüft, ob eine gegebene Zahl positiv ist.
+    public static String checkPositiveNumber(int number1) {
+        if (number1 > 0) {
+            return "Zahl ist positiv";
+        } else {
+            return "Zahl ist nicht positiv";
+        }
+    }
 }

@@ -54,5 +54,24 @@ class MainTest {
     }
 
     @Test
-    void
+    void toUpperCase_whenWordConsistsOfLowerCases_thenConvertToUpperCases() {
+        //GIVEN
+        String word = "auto";
+        String expected = "AUTO";
+        //WHEN
+        String actual = Main.toUpperCase(word);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void checkPositiveNumber_whenNumberIsPositive_thenReturnMessageNumberIsPositive(){
+        //GIVEN
+        int number1 = 2;
+        String expected = "Zahl ist positiv";
+        //WHEN
+        String actual = Main.checkPositiveNumber(number1);
+        //THEN
+        assertEquals(expected, actual);
+    }
 }
